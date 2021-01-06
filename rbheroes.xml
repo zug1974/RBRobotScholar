@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<heroes>
+<hero>
+<name>Shield Pig</name>
+<path>Adversary</path>
+<AD>3</AD>
+<Speed>4</Speed>
+<Armor>2</Armor>
+<Ability>
+	<Type>Melee</Type><!-- Melee,Ranged,Natural,Passive,Magic,Special -->
+	<AbilityName>Hand Weapon</AbilityName>
+	<Difficulty>4</Difficulty>
+	<Effect>+3</Effect>
+</Ability>
+<Ability>
+	<Type>Natural</Type><!-- Melee,Ranged,Natural,Passive,Magic,Special -->
+	<AbilityName>Gore</AbilityName>
+	<Difficulty>3</Difficulty>
+	<Effect>+2</Effect>
+</Ability>
+<Ability> 
+	<Type>Special</Type> <!-- Melee,Ranged,Natural,Passive,Magic,Special -->
+	<AbilityName>Tough</AbilityName>
+	<Difficulty></Difficulty>
+	<Effect>Recover on a 5+</Effect>
+</Ability>
+<Damage>OOBX</Damage> <!-- O=Regular,B=Crit,X=Dead -->
+<Keyword>Pig</Keyword>
+<Upgrade>
+	<Name>...</Name>
+	<Type>Tactic</Type> <!-- Tactic,Weapon,Gear,Spell,Potion -->
+	<Cost>0</Cost> 
+	<Desc></Desc>
+</Upgrade>
+<Upgrade>
+	<Type>Gear</Type> <!-- Tactic,Weapon,Gear,Spell,Potion -->
+	<Name>...</Name>
+	<Cost>0</Cost> 
+	<Desc></Desc>
+</Upgrade>
+<Upgrade>
+	<Type>Potion</Type> <!-- Tactic,Weapon,Gear,Spell,Potion -->
+	<Name>...</Name>
+	<Cost>0</Cost> 
+	<Desc></Desc>
+</Upgrade>
+<Cost>16</Cost>
+</hero>	
+</heroes>

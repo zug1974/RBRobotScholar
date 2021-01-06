@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RelicBlade Online Monster Field Guide</title>
+<link rel="stylesheet" type="text/css" href="monfieldguide.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<script>
+function generate() {
+	var monsize=new Array();
+	monsize[0]=new Array("Small",2,5,1, "damtracksm.png");
+    monsize[1]=new Array("Medium",2,5,1,"damtrackmd.png");
+    monsize[2]=new Array("Large",3,4,2, "damtracklg.png");
+	var montype = new Array("Humanoid","Beast","Arcane");
+    var typeprefix = new Array("hum","bst","arc");
+	var sizeroll=Math.floor(Math.random() * 3);
+	var typeroll=Math.floor(Math.random() * 3) ;
+	var attroll=Math.floor(Math.random() * 6)+1;
+	var abilroll=Math.floor(Math.random() * 6)+1;
+	var attimg=typeprefix[typeroll]+"attack"+attroll+".png";
+	var abilimg="ability"+abilroll+".png";
+    document.getElementById("AD").innerHTML = monsize[sizeroll][1];
+	document.getElementById("Monname").innerHTML  = monsize[sizeroll][0]+" "+montype[typeroll];
+	document.getElementById("SP").innerHTML = monsize[sizeroll][2];
+    document.getElementById("AR").innerHTML = monsize[sizeroll][3];
+	document.getElementById("damtrack").src = monsize[sizeroll][4];
+	document.getElementById("Attack").src = attimg;
+	document.getElementById("Ability").src = abilimg;    
+}
+</script>
+
+	<body window.onload="generate()">
+<div class="header">
+  <img src="Relicbladelogo.jpg" alt=""/>
+</div>
+<div class="container">
+  <div class="leftfiller">
+  <img src="leftside.jpg" alt="" width="230"/> 
+</div>
+<div class="content">
+  Monster Field Guide
+  <div class="card">
+    <div id="AD">0</div>
+    <div id="Monname">Medium Humanoid</div>
+    <div id="SP">0</div>
+    <p id="AR">0</p>
+    <img id="Attack" src="tattackblnk.png" alt=""/>
+    <img id="Ability" src="tattackblnk.png" alt=""/>
+    <img id="damtrack" src="damtrackblnk.png" alt=""/>
+  </div>
+   <button class="cardnav" onclick="generate()">Generate</button>
+ <!-- <button class="cardnav" onclick="generate()">Print</button>-->
+</div>
+<div class="rightfiller">
+  <img src="rightside.jpg" alt=""/> </div>
+  
+</div>
+
+</body>
+</html>

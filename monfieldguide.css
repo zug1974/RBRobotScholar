@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: Tradewinds;
+	src:url(fonts/TradeWinds-Regular.ttf);
+}
+body {background-color: black;}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	background-color: black;
+	font-family: Tradewinds;
+	color: white;
+	font-size:45px;
+	text-align:center;
+	}
+.header img{
+max-width:100%;
+}
+.leftfiller {
+	display: block;
+	float:left;
+	width:20%;
+	}
+.content{
+	display: block;
+	float:left;
+	width:60%;
+	font-family: Tradewinds;
+	color: white;
+	font-size:36px;
+	text-align:center;
+	margin:auto;
+	}
+.rightfiller {
+	display: block;
+	float:left;
+	width:20%;
+	background-image:url("rightside.jpg") no-repeat;
+	}
+
+.card {
+	margin:auto;
+	display: block;
+	position: relative;
+	width:360px;	
+	height:509px;
+	background-image:url("cardblank.jpg");
+	background-repeat:no-repeat;
+	color: black;
+}
+#AD{
+	position:absolute;
+	top: 40px;
+	left: 50px;
+	font-family:Tradewinds;
+	font-size:45px;
+	color: black;
+	text-align:center;
+}
+#Monname{
+	position:absolute;
+	top: 75px;
+	left: 114px;
+	font-family:Tradewinds;
+	font-size:18px;
+	color: black;
+	text-align:center;
+}
+#Ability{
+	position:absolute;
+	margin:auto;
+	top: 362px;
+	left: 28px;
+	font-family:Tradewinds;
+	font-size:36px;
+	color: black;
+	text-align:center;
+	height:91px;
+}
+
+#Attack{
+	position:absolute;
+	margin:auto;
+	top: 287px;
+	left: 28px;
+	font-family:Tradewinds;
+	font-size:36px;
+	color: black;
+	text-align:center;
+	height:91px;
+}
+
+#SP{
+	position:absolute;
+	top: 117px;
+	left: 50px;
+	font-family:Tradewinds;
+	font-size:36px;
+	color: black;
+	text-align:center;
+}
+
+#AR{
+	position:absolute;
+	top: 142px;
+	left: 50px;
+	font-family:Tradewinds;
+	font-size:36px;
+	color: black;
+	text-align:center;
+}
+
+#damtrack {
+	position:absolute;
+	margin:auto;
+	top: 444px;
+	left: 107px;
+	font-family:Tradewinds;
+	font-size:36px;
+	color: black;
+	text-align:center;
+	height:36px;
+	}
+.cardnav{
+background-color: #FFBF00;
+	font-family: Tradewinds;
+	font-size:45px;
+	color: black;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer{
+}
+
